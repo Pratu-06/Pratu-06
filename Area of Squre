@@ -1,0 +1,32 @@
+import java.io.*;
+interface Shape
+{
+	void area();
+	}
+
+class Squer implements Shape
+{
+	int area;
+	
+	Squer(int area)
+	{
+		this.area=area;
+	}
+	public void area()
+	{
+		double S_area=area*area;
+		System.out.println("the area is :"+S_area);
+	}
+	}
+public class Interface {
+
+	public static void main(String[] args)throws IOException {
+		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("enter the area of squer :");
+		int area=Integer.parseInt(br.readLine());
+		Squer S=new Squer(area);
+		S.area();
+
+	}
+
+}
